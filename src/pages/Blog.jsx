@@ -1,5 +1,6 @@
 import Post from '../components/Post'
 import postInfo from '../db/data'
+import '../css/Blog.css'
 
 const blog = () => {
   return (
@@ -11,9 +12,11 @@ const blog = () => {
                 <button type="submit">search</button>
             </form>
         </div>
-        {postInfo.map((post)=> {
-            return <Post title={post.title} author={post.author} desc={post.desc} date={post.date}/>
-        })}
+        <div className="flexContainer">
+            {postInfo.map((post)=> {
+                return <Post img={post.img} title={post.title} author={post.author} desc={post.desc} date={post.date}/>
+            })}
+        </div>
         <div className='footer'>
             <h4>FOLLOW US</h4>
             <ul>

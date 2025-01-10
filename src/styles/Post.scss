@@ -1,0 +1,37 @@
+.container {
+    flex: 40%;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -10px 10px #F4BF1A, 10px -10px #583B75;
+    transition: box-shadow 0.3s ease-in-out;
+
+    img {
+        width: 35%;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+
+    .postContent {
+        width: 100%;
+        
+        .lowerContent {
+            display: inline-block;
+            width: 100%;
+            p{
+                float: inline-start;
+                margin: 0;
+            }
+            a {
+                float: inline-end;
+            }
+        }
+    }
+}
+
+.container:hover {
+    box-shadow: -20px 20px #583B75, 20px -20px #F4BF1A;
+}
