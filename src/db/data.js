@@ -1,0 +1,3 @@
+let postInfo = [{img: '#', alt: '#', title: 'title', author: 'author', desc: 'description', date: '1/1/1'}, {img: '#', alt: '#', title: 'title', author: 'author', desc: 'description', date: '1/2/1'}, {img: '#', alt: '#', title: 'title', author: 'author', desc: 'description', date: '1/3/1'}, {img: '#', alt: '#', title: 'title', author: 'author', desc: 'description', date: '1/4/1'}]
+
+export default postInfo
