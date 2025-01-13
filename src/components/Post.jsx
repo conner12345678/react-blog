@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/Post.css'
+import { FaCommentDots } from "react-icons/fa";
 
 const Post = ({img, title, author, desc, date}) => {
   return (
@@ -14,7 +15,9 @@ const Post = ({img, title, author, desc, date}) => {
           </div>
           <div className="lowerContent">
             <p className='date'>{date}</p>
-            <a href="#"><img src="#" alt="comment button" /></a>
+            <a href="">
+              <FaCommentDots size={25}/>
+            </a>
           </div>
         </div>
     </div>

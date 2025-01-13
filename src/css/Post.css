@@ -18,15 +18,31 @@
   width: 100%;
 }
 .container .postContent .lowerContent {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
-.container .postContent .lowerContent p {
-  float: inline-start;
-  margin: 0;
-}
 .container .postContent .lowerContent a {
-  float: inline-end;
+  width: 30%;
+  text-align: right;
+  margin-top: 5px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.container .postContent .lowerContent a:hover {
+  color: #F4BF1A;
+}
+.container .postContent .lowerContent p {
+  margin: 0;
+  padding: 5px;
+}
+.container .desc {
+  background-color: #3D3D3D;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .container:hover {

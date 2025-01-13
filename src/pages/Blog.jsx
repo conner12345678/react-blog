@@ -1,15 +1,16 @@
 import Post from '../components/Post'
 import postInfo from '../db/data'
 import '../css/Blog.css'
+import { FaSearch } from "react-icons/fa";
 
 const blog = () => {
   return (
     <div className='content'>
         <div className='nav'>
-            <img src="" alt="logo image" className='logo'/>
+            <img src="https://i.ibb.co/GvLWdFM/blogLogo.png" alt="logo image" className='logo'/>
             <form action="#">
                 <input type="text" placeholder="Search..."/>
-                <button type="submit">search</button>
+                <button type="submit"><FaSearch size={50} /></button>
             </form>
         </div>
         <div className="flexContainer">
