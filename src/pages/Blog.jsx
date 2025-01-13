@@ -1,20 +1,30 @@
+import { useEffect, useState } from 'react'
 import Post from '../components/Post'
 import postInfo from '../db/data'
 import '../css/Blog.css'
 
-const blog = () => {
+const Blog = () => {
+    const [info, setInfo] = useState(postInfo)
+    const [searchTerm, setSearchTerm] = useState('')
+    const handleSearch = (e) => {
+        e.preventDefault()
+        const filteredPosts = postInfo.filter((post) =>
+            post.author.toLowerCase().includes(searchTerm.toLowerCase()) 
+        )
+        setInfo(filteredPosts)
+    }
   return (
     <div className='content'>
         <div className='nav'>
             <img src="" alt="logo image" className='logo'/>
-            <form action="#">
-                <input type="text" placeholder="Search..."/>
+            <form onSubmit={handleSearch}>
+                <input className='search' type="text" placeholder="Search by author..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
                 <button type="submit">search</button>
             </form>
         </div>
         <div className="flexContainer">
-            {postInfo.map((post)=> {
-                return <Post img={post.img} title={post.title} author={post.author} desc={post.desc} date={post.date}/>
+            {info.map((post)=> {
+                return <Post image={post.image} title={post.title} author={post.author} desc={post.desc} date={post.date}/>
             })}
         </div>
         <div className='footer'>
@@ -29,4 +39,4 @@ const blog = () => {
   )
 }
 
-export default blog
+export default Blog
