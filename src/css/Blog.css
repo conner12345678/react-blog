@@ -3,7 +3,7 @@
   src: url(../CityBrawlersBoldCaps.otf);
 }
 body {
-  background-image: url(../images/abstract-timekeeper.png);
+  background-image: url("https://i.ibb.co/VvxHBJx/abstract-timekeeper.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body h5 {
   font-weight: bold;
 }
 body p {
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin: 10px 0;
 }
 body .flexContainer {
@@ -55,7 +55,7 @@ body .nav form input {
   text-align: center;
   font-family: "blogFont";
   font-size: 3.2em;
-  color: #B0B0B0;
+  color: gray;
 }
 body .nav form button {
   background-color: #583B75;
@@ -64,4 +64,29 @@ body .nav form button {
   border-radius: 50px;
   padding: 10px;
   margin-left: 20px;
+  transition: all 0.5s ease-in-out;
+}
+body .nav form button:hover {
+  background-color: #F4BF1A;
+  scale: 1.1;
+}
+body .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .footer h4 {
+  margin-right: 10px;
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-color: #F4BF1A;
+}
+body .footer a {
+  color: white;
+  margin: 10px;
+  transition: all 0.5s ease-in-out;
+}
+body .footer a:hover {
+  color: #F4BF1A;
+  scale: 1.1;
 }/*# sourceMappingURL=Blog.css.map */

@@ -16,6 +16,11 @@
 }
 .container .postContent {
   width: 100%;
+  max-width: 400px;
+}
+.container .postContent hr {
+  border: 2.5px solid #F4BF1A;
+  border-radius: 10px;
 }
 .container .postContent .lowerContent {
   display: flex;
@@ -43,6 +48,8 @@
   border-radius: 20px;
   text-align: left;
   margin-bottom: 10px;
+  max-width: 400px;
+  height: auto;
 }
 
 .container:hover {
