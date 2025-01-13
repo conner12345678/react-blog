@@ -17,10 +17,10 @@ const Blog = () => {
   return (
     <div className='content'>
         <div className='nav'>
-            <img src="" alt="logo image" className='logo'/>
+            <img src="https://i.ibb.co/GvLWdFM/blogLogo.png" alt="logo image" className='logo'/>
             <form onSubmit={handleSearch}>
                 <input className='search' type="text" placeholder="Search by author..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
-                <button type="submit">search</button>
+                <button type="submit"><FaSearch size={40}/></button>
             </form>
         </div>
         <div className="flexContainer">
