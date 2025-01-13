@@ -25,7 +25,7 @@ const Blog = () => {
         </div>
         <div className="flexContainer">
             {info.map((post)=> {
-                return <Post image={post.image} title={post.title} author={post.author} desc={post.desc} date={post.date}/>
+                return <Post key={new Date().getDate()} image={post.image} title={post.title} author={post.author} desc={post.desc} date={post.date} comments={post.comments}/>
             })}
         </div>
         <div className='footer'>
