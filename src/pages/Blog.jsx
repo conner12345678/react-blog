@@ -2,7 +2,14 @@ import { useEffect, useState } from 'react'
 import Post from '../components/Post'
 import postInfo from '../db/data'
 import '../css/Blog.css'
+
+// React icons
 import { FaSearch } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BiSolidCategory } from "react-icons/bi";
+import { FaQuestionCircle } from "react-icons/fa";
 
 const Blog = () => {
     const [info, setInfo] = useState(postInfo)
@@ -30,11 +37,9 @@ const Blog = () => {
         </div>
         <div className='footer'>
             <h4>FOLLOW US</h4>
-            <ul>
-                <li><a href="#"><img src="#" alt="facebook" /></a></li>
-                <li><a href="#"><img src="#" alt="Instagram" /></a></li>
-                <li><a href="#"><img src="#" alt="Twitter" /></a></li>
-            </ul>
+            <a href=""><FaFacebook size={40} /></a>
+            <a href=""><FaLinkedinIn size={40} /></a>
+            <a href=""><FaTwitter size={40} /></a>
         </div>
     </div>
   )
