@@ -2,10 +2,10 @@ import React from 'react'
 import '../css/Post.css'
 import { FaCommentDots } from "react-icons/fa";
 
-const Post = ({img, title, author, desc, date}) => {
+const Post = ({image, title, author, desc, date}) => {
   return (
     <div className='container'>
-        <img src={img} alt="post" className='image'/>
+        <img src={image} alt="post" className='image'/>
         <div className="postContent">
           <h3 className='title'>{title}</h3>
           <hr />
