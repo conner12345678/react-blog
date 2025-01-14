@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../css/Post.css';
 import { FaCommentDots } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
   const [bool, setBool] = useState(false); // Manage comment section visibility
@@ -26,7 +27,7 @@ const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
         </div>
         <div className="lowerContent">
           <p className="date">{date}</p>
-          <a onClick={() => setBool(!bool)} style={{ cursor: "pointer" }}>
+          <a title='Comments' onClick={() => setBool(!bool)} style={{ cursor: "pointer" }}>
             <FaCommentDots size={25} />
           </a>
         </div>
@@ -49,7 +50,7 @@ const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
                   value={theComment}
                   onChange={(e) => setTheComment(e.target.value)}
                 />
-                <button type="submit">Submit</button>
+                <button type="submit" title='Sumbit'><FaArrowDown size={25}/></button>
               </form>
             </div>
           )}

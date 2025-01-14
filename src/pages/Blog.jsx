@@ -34,12 +34,14 @@ const Blog = () => {
     <div className='content'>
         <div className='nav'>
             <img src="https://i.ibb.co/GvLWdFM/blogLogo.png" alt="logo image" className='logo'/>
-            <form onSubmit={handleSearch}>
-                <input className='search' type="text" placeholder="Search by author..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
-                <button type="submit"><FaSearch size={40}/></button>
-                <a href="">< BiSolidCategory size={40} /></a>
-                <a href="">< FaQuestionCircle size={40} /></a>
-            </form>
+            <div>
+                <form onSubmit={handleSearch}>
+                    <input className='search' type="text" placeholder="Search by author..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+                    <button type="submit" title='Search'><FaSearch size={40}/></button>
+                </form>
+                <a href="" title='Categories'>< BiSolidCategory size={40} /></a>
+                <a href="" title='Contact Us'>< FaQuestionCircle size={40} /></a>
+            </div>
         </div>
         <div className="flexContainer">
             {info.map((post)=> {
