@@ -37,6 +37,8 @@ const Blog = () => {
             <form onSubmit={handleSearch}>
                 <input className='search' type="text" placeholder="Search by author..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
                 <button type="submit"><FaSearch size={40}/></button>
+                <a href="">< BiSolidCategory size={40} /></a>
+                <a href="">< FaQuestionCircle size={40} /></a>
             </form>
         </div>
         <div className="flexContainer">

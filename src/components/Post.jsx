@@ -29,6 +29,8 @@ const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
           <a onClick={() => setBool(!bool)} style={{ cursor: "pointer" }}>
             <FaCommentDots size={25} />
           </a>
+        </div>
+      </div>
           {bool && (
             <div className="comments">
               <h6>Comments</h6>
@@ -51,8 +53,6 @@ const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
               </form>
             </div>
           )}
-        </div>
-      </div>
     </div>
   );
 };
