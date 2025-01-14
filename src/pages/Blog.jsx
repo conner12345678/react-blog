@@ -21,6 +21,15 @@ const Blog = () => {
         )
         setInfo(filteredPosts)
     }
+    const onAddComment = (e) => {
+        const updatedPosts = info.map((post) => {
+            if (e) {
+                return {...post, comments: [...post.comments, e] }
+            }
+            return post;
+        })
+        setInfo(updatedPosts)
+    }
   return (
     <div className='content'>
         <div className='nav'>
@@ -32,7 +41,7 @@ const Blog = () => {
         </div>
         <div className="flexContainer">
             {info.map((post)=> {
-                return <Post key={new Date().getDate()} image={post.image} title={post.title} author={post.author} desc={post.desc} date={post.date} comments={post.comments}/>
+                return <Post key={new Date().getDate()} image={post.image} title={post.title} author={post.author} desc={post.desc} date={post.date} comments={post.comments} onAddComment={onAddComment}/>
             })}
         </div>
         <div className='footer'>
