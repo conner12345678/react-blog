@@ -35,6 +35,7 @@ const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
           {bool && (
             <div className="comments">
               <h6>Comments</h6>
+              <hr />
               <ul>
                 {comments.map((comment, index) => (
                   <div className="com" key={index}>

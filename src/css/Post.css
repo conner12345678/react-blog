@@ -1,24 +1,19 @@
 .container {
-  flex: 40%;
   background-color: black;
   margin: auto;
   padding: 20px;
   border-radius: 25px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   box-shadow: -10px 10px #F4BF1A, 10px -10px #583B75;
   transition: box-shadow 0.3s ease-in-out;
-}
-@media (max-width: 1250px) {
-  .container {
-    flex-direction: column;
-  }
+  width: 40%;
 }
 .container img {
-  width: 35%;
+  width: 70%;
   height: auto;
   border-radius: 20px;
-  margin-right: 20px;
+  margin: auto;
 }
 @media (max-width: 1250px) {
   .container img {
@@ -28,7 +23,9 @@
 }
 .container .postContent {
   width: 100%;
+  margin: auto;
   max-width: 400px;
+  text-align: center;
 }
 @media (max-width: 1250px) {
   .container .postContent {
@@ -80,11 +77,18 @@
   padding: 10px;
   border-radius: 20px;
   text-align: left;
+  margin-top: 10px;
+  width: 80%;
+  margin: 10px auto auto auto;
 }
 .container .comments h6 {
   font-size: 2em;
   margin: 0;
   text-align: center;
+}
+.container .comments hr {
+  border: 2.5px solid #F4BF1A;
+  border-radius: 10px;
 }
 .container .comments .com li {
   font-size: 1.4em;
