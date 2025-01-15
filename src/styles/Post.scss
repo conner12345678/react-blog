@@ -5,14 +5,9 @@
     padding: 20px;
     border-radius: 25px;
     display: flex;
-    justify-content: space-evenly;
-    // flex-direction: row;
+    flex-direction: column;
     box-shadow: -10px 10px #F4BF1A, 10px -10px #583B75;
     transition: box-shadow 0.3s ease-in-out;
-
-    @media (max-width: 1250px) {
-        flex-direction: column;
-    }
 
     img {
         width: 35%;
