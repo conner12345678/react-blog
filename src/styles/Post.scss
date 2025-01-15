@@ -9,15 +9,26 @@
     transition: box-shadow 0.3s ease-in-out;
     width: 40%;
 
+    // For Small Devices
+    @media (max-width: 426px) {
+        width: 75%;
+    }
+
     img { 
         width: 70%;
         height: auto;
         border-radius: 20px;
         margin: auto;
 
+        // For Medium Screen Devices
         @media (max-width: 1250px) {
             width: 65%;
             margin: auto;
+        }
+
+        // For Small Devices
+        @media (max-width: 426px) {
+            width: 80%;
         }
     }
 
@@ -26,6 +37,8 @@
         margin: auto;
         max-width: 400px;
         text-align: center;
+
+        // For Medium Screen Devices
         @media (max-width: 1250px) {
             width: 70%;
             max-width: none;
@@ -70,6 +83,8 @@
         margin-bottom: 10px;
         max-width: 400px;
         height: auto;
+
+        // For Medium Screen Devices
         @media (max-width: 1250px) {
             max-width: 500px;
         }
@@ -116,6 +131,12 @@
                 font-family: 'blogFont';
                 font-size: 1.8em;
                 color: gray;
+
+                // For small screen
+                @media (max-width: 426px) {
+                    width: 100px;
+                    font-size: 1.4em;
+                }
             }
 
             button {

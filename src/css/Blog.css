@@ -46,6 +46,12 @@ body .nav img {
   height: 200px;
   transition: filter 0.3s ease-in-out;
 }
+@media (max-width: 426px) {
+  body .nav img {
+    width: 300px;
+    height: 200px;
+  }
+}
 body .nav div {
   display: flex;
   align-items: center;
@@ -55,6 +61,11 @@ body .nav div form {
   margin-right: 25px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 426px) {
+  body .nav div form {
+    margin-right: 10px;
+  }
 }
 body .nav div form input {
   width: 300px;
@@ -67,6 +78,12 @@ body .nav div form input {
   font-size: 3.2em;
   color: gray;
 }
+@media (max-width: 426px) {
+  body .nav div form input {
+    width: 45vw;
+    font-size: 2em;
+  }
+}
 body .nav div form button {
   background-color: #583B75;
   color: white;
@@ -75,6 +92,15 @@ body .nav div form button {
   padding: 10px;
   margin-left: 20px;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 426px) {
+  body .nav div form button {
+    padding: 5px;
+  }
+  body .nav div form button svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 body .nav div form button:hover {
   background-color: #F4BF1A;
@@ -88,6 +114,16 @@ body .nav div a {
   padding: 10px;
   margin-right: 20px;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 426px) {
+  body .nav div a {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  body .nav div a svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 body .nav div a:hover {
   background-color: #F4BF1A;

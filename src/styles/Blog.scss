@@ -49,6 +49,12 @@ body {
             width: 400px;
             height: 200px;
             transition: filter 0.3s ease-in-out;
+
+            // For Small Devices
+            @media (max-width: 426px) {
+                width: 300px;
+                height: 200px;
+            }
         }
 
         div {
@@ -59,6 +65,11 @@ body {
                 margin-right: 25px;
                 display: flex;
                 align-items: center;
+
+                // For Small Devices
+                @media (max-width: 426px) {
+                    margin-right: 10px;
+                }
                 
                 input {
                     width: 300px;
@@ -70,6 +81,12 @@ body {
                     font-family: 'blogFont';
                     font-size: 3.2em;
                     color: gray;
+
+                    // For Small Devices
+                    @media (max-width: 426px) {
+                        width: 45vw;
+                        font-size: 2em;
+                    }
                 }
     
                 button {
@@ -80,6 +97,16 @@ body {
                     padding: 10px;
                     margin-left: 20px;
                     transition: all .5s ease-in-out;
+
+                    // For Small Devices
+                    @media (max-width: 426px) {
+                        padding: 5px;
+
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
                 }
     
                 
@@ -96,6 +123,17 @@ body {
                 padding: 10px;
                 margin-right: 20px;
                 transition: all .5s ease-in-out;
+
+                // For Small Devices
+                @media (max-width: 426px) {
+                    margin-right: 10px;
+                    padding: 5px;
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
             }
 
             a:hover {
