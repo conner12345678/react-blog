@@ -3,14 +3,14 @@ import '../css/Post.css';
 import { FaCommentDots } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 
-const Post = ({ image, title, author, desc, date, comments, onAddComment }) => {
+const Post = ({ image, title, author, desc, date, comments, onAddComment, id }) => {
   const [bool, setBool] = useState(false); // Manage comment section visibility
   const [theComment, setTheComment] = useState(''); // Manage input for new comment
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (theComment.trim() !== "") {
-      onAddComment(theComment); // Pass new comment to parent
+      onAddComment(theComment, id); // Pass new comment to parent
       setTheComment(''); // Clear input field
     }
   };
